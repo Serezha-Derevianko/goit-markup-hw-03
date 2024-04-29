@@ -4,16 +4,32 @@ color: #434455;
 background-color: #FFFFFF;
 }
 
-ul {
+ul, ol {
 list-style-type: none;
+padding: 0;
+margin: 0;
 }
 
 a {
 text-decoration: none;
 }
 
+.container {
+width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
 /* <!---------HEADER---------> */
 
+.page-header {
+border-bottom: 1px solid #e7e9fc;
+}
 
 .main-logo {
 font-family: "Raleway", sans-serif;
@@ -23,10 +39,21 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+margin-right: 76px;
 }
 
 .main-logo-color {
 color: #2e2f42;
+}
+
+.page-nav {
+display: flex;
+align-items: center;
+}
+
+.nav-menu {
+ display: flex;
+ gap: 40px;
 }
 
 .menu-item {
@@ -36,6 +63,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding: 24px 0;
+display: block;
 }
 
 .menu-link {
@@ -48,6 +77,10 @@ color: #2e2f42;
 color: #404bbf;
 }
 
+.address-menu {
+ display: flex;
+ gap: 40px;
+}
 
 .link-address {
 font-family: "Roboto", sans-serif;
@@ -65,11 +98,13 @@ color: #404bbf;
 
 .page-address {
 font-style: normal;
+margin-left: auto;
 }
 /*<!---------HERO---------> */
 
 .main-hero {
 background: #2e2f42;
+width: 1440px;
 }
 
 .main-title {
@@ -90,6 +125,9 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 background: #4d5ae5;
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
 }
 
 .hero-button:hover,
