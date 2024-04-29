@@ -151,19 +151,21 @@ cursor: pointer;
 /* <!---------INFO---------> */
 
 .main-info {
-padding: 120px 0
+padding: 120px 0;
 }
 
-.main-subtitle {
-font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11111;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
-
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .main-page-subtitle {
 font-family: "Roboto", sans-serif;
@@ -198,6 +200,7 @@ color: #434455;
 
 .main-our-team {
 background-color: #F4F4FD;
+padding: 120px 0;
 }
 
 .main-subtitle {
@@ -208,11 +211,24 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 72px;
 text-transform: capitalize
 }
 
+.main-menu-team {
+display: flex;
+gap: 24px;
+}
+
+
 .our-team-list {
-background-color: #FFFFFF
+width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
+background-color: #FFFFFF;
+}
+
+.position-name {
+    padding: 32px 0;
 }
 
 
@@ -224,6 +240,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .main-description-team {
@@ -234,6 +251,39 @@ line-height: 150%;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
+}
+
+/*<!---------Our Portfolio----------> */
+
+.last-section {
+padding-top: 120px; 
+padding-bottom: 120px; 
+}
+
+.main-last-subtitle {
+margin-bottom: 72px;
+text-align: center;
+}
+
+.portfolio-subtitle {
+margin-bottom: 8px
+}
+
+.menu-portfolio {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+}
+
+.portfoloio-menu-item {
+width: calc((100% - 48px) / 3);
+}
+
+.app-name {
+border: 1px solid #e7e9fc;
+border-top: none;
+padding: 32px 16px
 }
 
 /*<!---------FOOTER---------> */
@@ -247,6 +297,7 @@ color: #f4f4fd;
 
 .footer-logo-description {
 background-color: #2e2f42;
+padding: 100px 0;
 }
 
 .footer-logo {
@@ -257,6 +308,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+display: inline-block;
 }
 
 .footer-logo-color {
