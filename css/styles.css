@@ -117,7 +117,7 @@ letter-spacing: 0.02em;
 color: #fff;
 max-width: 496px;
 text-align: center;
-margin-left: 471px; 
+margin: auto; 
 }
 
 .hero-button {
@@ -134,7 +134,7 @@ width: 169px;
 display: block;
 height: 56px;
 border: none;
-margin-left: 635px;
+margin: auto;
 }
 
 .hero-button:hover,
